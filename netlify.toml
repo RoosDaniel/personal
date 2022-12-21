@@ -1,10 +1,6 @@
 [build]
-  publish = "dist/"
+  command = "solid-start build"
+  functions = "netlify/functions"
+  publish = "netlify"
 
-[functions]
-  directory = "dist/functions"
-
-[[redirects]]
-  from = "/*"
-  to = "/.netlify/functions/index"
-  status = 200
+  ## more info on configuring this file: https://www.netlify.com/docs/netlify-toml-reference/
